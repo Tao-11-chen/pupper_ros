@@ -1,0 +1,18 @@
+<launch>
+    <arg name="frame_prefix" default=""/>
+    <param name="/use_sim_time" value="true" />
+
+    <!-- Cartographer Localization -->
+    <node name="cartographer_node" pkg="cartographer_ros"
+        type="cartographer_node" args="
+            -configuration_directory $(find pupper_config)/config/cartographer
+            -configuration_basename nav.lua
+            -load_state_filename $(find pupper_config)/maps/map.pbstream"
+        output="screen">
+      <remap from="scan" to="scan" />
+      <remap from="imu" to="imu/data" />
+    </node>
+
+    <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+        type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+</launch>

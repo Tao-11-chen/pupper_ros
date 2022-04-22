@@ -1,0 +1,24 @@
+base: base_link
+left_front:
+  - LF1_LINK
+  - LF2_LINK
+  - LF3_LINK
+  - LF4_LINK
+
+right_front:
+  - RF1_LINK
+  - RF2_LINK
+  - RF3_LINK
+  - RF4_LINK
+
+left_hind:
+  - LB1_LINK
+  - LB2_LINK
+  - LB3_LINK
+  - LB4_LINK
+
+right_hind:
+  - RB1_LINK
+  - RB2_LINK
+  - RB3_LINK
+  - RB4_LINK
