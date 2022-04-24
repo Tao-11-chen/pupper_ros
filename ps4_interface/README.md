@@ -32,5 +32,3 @@ Sony PlayStation 4 DualShock®4 node joy_msg to twist_msg
 * Display raw _ds4drv_ data
   * `$sudo jstest /dev/input/jsX`
   
-# To Do (v.2.0)
-* [ ] Pan-and-Tilt on second joystick
